@@ -23,7 +23,7 @@ const Form = () => {
   async function handleSubmit(e){
     e.preventDefault();
     setloading(true)
-    const res = await fetch("/genAd",{
+    const res = await fetch("adgenius.up.railway.app/genAd/",{
       "method":"POST",
       "headers":{
         "Content-Type":"application/json"
