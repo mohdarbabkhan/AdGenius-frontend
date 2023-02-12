@@ -23,7 +23,7 @@ const Form = () => {
   async function handleSubmit(e){
     e.preventDefault();
     setloading(true)
-    const res = await fetch("https://adbackend.onrender.com/genAd/",{
+    const res = await fetch("https://adbackend.onrender.com/genAd",{
       "method":"POST",
       "headers":{
         "Content-Type":"application/json",
